@@ -129,10 +129,6 @@ p {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent);
 }
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
 
 code {
   font-size: 15px;
