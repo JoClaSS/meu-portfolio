@@ -46,16 +46,6 @@
   font-family: var(--heading) !important;
   font-weight: 500 !important;
   letter-spacing: -0.02em !important;
-  
-  @media (max-width: 768px) {
-    font-size: 2.5rem !important;
-    margin: 1rem 0 !important;
-  }
-  
-  @media (max-width: 480px) {
-    font-size: 2rem !important;
-    margin: 0.75rem 0 !important;
-  }
 }
 
 .hero-text .title {
@@ -64,11 +54,6 @@
   margin: 1rem 0 1.5rem 0;
   font-weight: 400;
   line-height: 1.3;
-  
-  @media (max-width: 768px) {
-    font-size: 1.3rem;
-    margin: 0.75rem 0 1.25rem 0;
-  }
 }
 
 .intro {
@@ -147,11 +132,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: start;
-  
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
 }
 
 .about-text p {
@@ -395,7 +375,29 @@ section {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
-    right: 0;
-    border-right-color: var(--border);
+
+/* Media queries */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.5rem !important;
+    margin: 1rem 0 !important;
   }
+  
+  .hero-text .title {
+    font-size: 1.3rem;
+    margin: 0.75rem 0 1.25rem 0;
+  }
+  
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2rem !important;
+    margin: 0.75rem 0 !important;
+  }
+}
 }
